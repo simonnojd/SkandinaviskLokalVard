@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Skandinavisk Lokalvård</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -17,7 +17,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -52,26 +51,26 @@
                 >Offert</a
               >
               <div class="dropdown-content" id="myDropdown">
-                <a class="dropdown-item" href="Hemstädning.html">Hemstädning</a>
-                <a class="dropdown-item" href="Flyttstädning.html"
+                <a class="dropdown-item" href="Hemstadning.html">Hemstädning</a>
+                <a class="dropdown-item" href="Flyttstadning.html"
                   >Flyttstädning</a
                 >
-                <a class="dropdown-item" href="Byggstädning.html"
+                <a class="dropdown-item" href="Byggstadning.html"
                   >Byggstädning</a
                 >
-                <a class="dropdown-item" href="Restaurangstädning.html"
+                <a class="dropdown-item" href="Restaurangstadning.html"
                   >Restaurangstädning</a
                 >
-                <a class="dropdown-item" href="övrigStädning.html"
-                  >Övrigt</a
-                >
+                <a class="dropdown-item" href="ovrigStadning.html">Övrigt</a>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="omOss.html">Om Oss</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="kontaktaOss.html">Kontakta Oss</a>
+              <a class="nav-link active" href="kontaktaOss.html"
+                >Kontakta Oss</a
+              >
             </li>
           </ul>
         </div>
@@ -84,13 +83,31 @@
       >
         Kontakta Oss
       </h1>
-      <p style="margin-left: 30%;">VD: Jack Benedictsson</p>
-      <p style="margin-left: 30%;">Nummer: 070-666 11 22</p>
-      <p style="margin-left: 30%;">Mail: skandinavisk.benedict@gmail.com</p>
-      <br>
-      <p style="margin-left: 30%;">Styrelseledarmot: Kai Svensson</p>
-      <p style="margin-left: 30%;">Nummer: 073-444 55 33</p>
-      <p style="margin-left: 30%;">Mail: skandinavisk.svensson@gmail.com</p>
+      <table class="table table-hover" style="max-width: 70%; margin-left: 15%">
+        <thead>
+          <tr>
+            <th scope="col">Roll</th>
+            <th scope="col">Namn</th>
+            <th scope="col">Nummer</th>
+            <th scope="col">Mail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope="row">VD</th>
+            <td>Jack Benedictsson</td>
+            <td>070-444 11 22</td>
+            <td>skvard.benedict@gmail.com</td>
+          </tr>
+          <tr class="table-primary">
+            <th scope="row">Styrelseledarmot</th>
+            <td>Kaj Persson</td>
+            <td>073-666 55 33</td>
+            <td>skvard.persson@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+
 
       <div class="mapouter">
         <div class="gmap_canvas">
@@ -125,7 +142,6 @@
           </style>
       </div>
     </div>
-    <script src="dropDown.js"></script>
-
+    <script src="scripts/dropDown.js"></script>
   </body>
 </html>
