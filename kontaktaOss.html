@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hem </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                onclick="myFunction()"
+                class="nav-link dropdown-toggle dropbtn"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Offert</a
+              >
+              <div class="dropdown-content" id="myDropdown">
+                <a class="dropdown-item" href="Hemstädning.html">Hemstädning</a>
+                <a class="dropdown-item" href="Flyttstädning.html"
+                  >Flyttstädning</a
+                >
+                <a class="dropdown-item" href="Byggstädning.html"
+                  >Byggstädning</a
+                >
+                <a class="dropdown-item" href="Restaurangstädning.html"
+                  >Restaurangstädning</a
+                >
+                <a class="dropdown-item" href="övrigStädning.html"
+                  >Övrigt</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="omOss.html">Om Oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="kontaktaOss.html">Kontakta Oss</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <h1
+        class="d-flex justify-content-center"
+        style="margin-top: 2rem; margin-bottom: 2rem"
+      >
+        Kontakta Oss
+      </h1>
+      <p style="margin-left: 30%;">VD: Jack Benedictsson</p>
+      <p style="margin-left: 30%;">Nummer: 070-666 11 22</p>
+      <p style="margin-left: 30%;">Mail: skandinavisk.benedict@gmail.com</p>
+      <br>
+      <p style="margin-left: 30%;">Styrelseledarmot: Kai Svensson</p>
+      <p style="margin-left: 30%;">Nummer: 073-444 55 33</p>
+      <p style="margin-left: 30%;">Mail: skandinavisk.svensson@gmail.com</p>
+
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="600"
+            height="300"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Stockholm&t=&z=11&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><br /><style>
+            .mapouter {
+              position: relative;
+              text-align: center;
+              height: 50%;
+              width: 90%;
+              margin-left: 5%;
+            }</style
+          ><a href="https://www.embedgooglemap.net"></a
+          ><style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 50%;
+              width: 90%;
+              margin-left: 5%;
+              margin-right: 5%; 
+            }
+          </style>
+      </div>
+    </div>
+    <script src="dropDown.js"></script>
+
+  </body>
+</html>

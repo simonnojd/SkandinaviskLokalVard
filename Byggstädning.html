@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hem </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                onclick="myFunction()"
+                class="nav-link dropdown-toggle dropbtn active"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Offert</a
+              >
+              <div class="dropdown-content" id="myDropdown">
+                <a class="dropdown-item" href="Hemstädning.html">Hemstädning</a>
+                <a class="dropdown-item" href="Flyttstädning.html"
+                  >Flyttstädning</a
+                >
+                <a class="dropdown-item" href="Byggstädning.html"
+                  >Byggstädning</a
+                >
+                <a class="dropdown-item" href="Restaurangstädning.html"
+                  >Restuarangstädning</a
+                >
+                <a class="dropdown-item" href="övrigStädning.html">Övrigt</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="omOss.html">Om Oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontaktaOss.html">Kontakta Oss</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <h1
+        class="d-flex justify-content-center"
+        style="
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          display: inline-block;
+          text-align: center;
+        "
+      >
+        Offert för Byggstädning
+      </h1>
+      <form
+        method="POST"
+        class="contact-form"
+        style="width: 70%; margin-left: 15%; margin-right: 15%"
+      >
+        <fieldset>
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4">Namn</label>
+            <input
+              class="name"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Förnamn Efternamn"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="email"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="exempel@mail.se"
+            />
+            <br />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4"
+              >Övrigt</label
+            >
+            <input
+              class="message"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+        </fieldset>
+        <br />
+        <small id="emailHelp" class="form-text text-muted"
+          >Vi kontaktar er så fort som möjligt via mailen du angav <br
+        /></small>
+        <br />
+        <button type="submit" class="btn btn-primary" style="margin-top: 2rem">
+          Skicka
+        </button>
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="byggStäd.js"></script>
+  </body>
+</html>
