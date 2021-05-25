@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skandinavisk Lokalvård</title>
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/services.css" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"> </a>
+        <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,12 +37,15 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Hem </a>
+              <a class="nav-link" href="index.html"
+                >Hem
+                <span class="visually-hidden">(current)</span>
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a
                 onclick="myFunction()"
-                class="nav-link dropdown-toggle dropbtn active"
+                class="nav-link dropdown-toggle dropbtn"
                 data-bs-toggle="dropdown"
                 href="#"
                 role="button"
@@ -59,13 +62,13 @@
                   >Byggstädning</a
                 >
                 <a class="dropdown-item" href="Restaurangstadning.html"
-                  >Restuarangstädning</a
+                  >Restaurangstädning</a
                 >
                 <a class="dropdown-item" href="ovrigStadning.html">Övrigt</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tjanster.html">Tjänster</a>
+              <a class="nav-link active" href="omOss.html">Tjänster</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="omOss.html">Om Oss</a>
@@ -88,63 +91,48 @@
           text-align: center;
         "
       >
-        Offert för Byggstädning
+        Restaurangstädning
       </h1>
-      <form
-        method="POST"
-        class="contact-form"
-        style="width: 70%; margin-left: 15%; margin-right: 15%"
-      >
-        <fieldset>
-          <div class="form-group">
-            <label for="exampleInputEmail1" class="form-label mt-4">Namn</label>
-            <input
-              class="name"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Förnamn Efternamn"
-            />
-          </div>
-        </fieldset>
-        <fieldset>
-          <div class="form-group">
-            <label for="exampleInputEmail1" class="form-label mt-4"
-              >Email</label
-            >
-            <input
-              type="email"
-              class="email"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="exempel@mail.se"
-            />
-            <br />
-          </div>
-        </fieldset>
 
-        <fieldset>
-          <div class="form-group">
-            <label for="exampleInputEmail1" class="form-label mt-4"
-              >Övrigt</label
-            >
-            <input
-              class="message"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-          </div>
-        </fieldset>
-        <br />
-        <small id="emailHelp" class="form-text text-muted"
-          >Vi kontaktar er så fort som möjligt via mailen du angav <br
-        /></small>
-        <br />
-        <button type="submit" class="btn btn-primary" style="margin-top: 2rem">
-          Skicka
-        </button>
-      </form>
+      <table
+        class="table table-hover"
+        style="
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          margin-left: 25%;
+          text-align: center;
+          max-width: 50%;
+        "
+      >
+        <tbody>
+          <p
+            class="d-flex justify-content-center"
+            style="
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+              margin-left: 25%;
+              text-align: center;
+              max-width: 50%;
+            "
+          >
+            I en restaurang blir det ofta väldigt stökigt. Vi alla vet att
+            arbetstimmarna för de anställda på restauranger kan vara väldigt
+            långa och att arbetet är stressigt. Därmed kan vi erbjuda vår hjälp
+            att göra hela lokalen skinande ren - till marknadens bästa priser.
+          </p>
+          <tr class="table-primary">
+            <td>
+              <a href="Restaurangstadning.html">Begär Offert</a>
+            </td>
+          </tr>
+          <tr class="table-primary">
+            <td>
+              <a href="tjanster.html">Gå tillbaka</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="scripts/byggStad.js"></script>
+    <script src="scripts/dropDown.js"></script>
   </body>
 </html>
